@@ -2,7 +2,7 @@ const { Telegraf, Markup } = require("telegraf");
 const axios = require("axios");
 const express = require("express");
 
-const API_KEY = "7561146470:AAE7TRvhbmKagg7rhaE-LKP7jYWH2l3g1SI";
+const API_KEY = "7818528843:AAEZkfklzXFmduGmeRu-Jsg1OiB3_NUjxrY";
 const bot = new Telegraf(API_KEY);
 const app = express();
 
@@ -12,7 +12,25 @@ app.use(express.json());
 // Start buyrug‘ini qabul qilish
 bot.start((ctx) => {
     ctx.replyWithHTML(
-        `👋 Assalomu alaykum, <b>${ctx.from.first_name}</b>!\n\nQo‘shiq nomini yuboring 🎵`
+        `🔥 Assalomu alaykum. @Vid_flex_bot ga Xush kelibsiz. Bot orqali quyidagilarni yuklab olishingiz mumkin:
+
+• Instagram - post va IGTV + audio bilan;
+• TikTok - suv belgisiz video + audio bilan;
+• YouTube - videolar va shorts + audio bilan;
+• Snapchat - suv belgisiz video + audio bilan;
+• Likee - suv belgisiz video + audio bilan;
+• Pinterest - suv belgisiz video va rasmlar + audio bilan;
+
+Shazam funksiya:
+• Qo‘shiq nomi yoki ijrochi ismi
+• Qo‘shiq matni
+• Ovozli xabar
+• Video
+• Audio
+• Video xabar
+
+🚀 Yuklab olmoqchi bo'lgan videoga havolani yuboring!
+😎 Bot guruhlarda ham ishlay oladi!`
     );
 });
 
